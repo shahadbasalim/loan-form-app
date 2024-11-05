@@ -1,0 +1,78 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container {
+    height: 100vh;
+}
+#loan-form {
+    background-color: rgb(51, 0, 170);
+    flex-direction: column;
+    width: 50%; 
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px rgba(39, 39, 39, 0.4);
+}
+h1 {
+    margin: 0;
+}
+hr {
+    width: 100%;
+}
+input, select {
+    width: 100%;    
+}
+input {
+    height: 25px;
+    font-size: 18px;
+    border: none;
+}
+input:focus, select:focus {
+    outline: none;
+}
+select {
+    height: 30px;
+    border: none;
+}
+label, select{
+    margin: 10px;
+}
+button {
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: rgb(211, 0, 127);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.disabled {
+    background-color: gray ;
+    cursor: not-allowed;
+}
+
+#model {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.558);
+    height: 100vh;
+    width: 100vw;
+}
+#model-content {
+    background-color: white;
+    padding: 5px;
+    width: 60%;
+    text-align: center;
+    color: green;
+    text-transform: capitalize;
+}
+#model-content h2 {
+    margin: 10px;
+}
+@media (max-width: 991px) {
+    #loan-form {
+        width: 90%;
+        padding: 10px;
+    }
+}
